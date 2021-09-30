@@ -6,10 +6,13 @@ public class IngressoVip extends Ingresso {
 
     private double valorAdiconal;
 
-    public IngressoVip() {
-        super();
-
+    public IngressoVip(double valor, double valorAdiconal) {
+        super(valor);
+        this.valorAdiconal = valorAdiconal;
     }
+
+
+
 
     public double getValorAdiconal() {
         return valorAdiconal;
@@ -19,8 +22,8 @@ public class IngressoVip extends Ingresso {
         this.valorAdiconal = valorAdiconal;
     }
 
-
-    public String toString(){
-
+    @Override
+    public String toString() {
+        return "O valor do IngressoVip é "+(valorAdiconal+getValor());
     }
 }

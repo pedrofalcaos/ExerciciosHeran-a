@@ -3,8 +3,8 @@ package Exercicios.questao2;
 public class Ingresso {
     private double valor;
 
-    public Ingresso() {
-
+    public Ingresso(double valor) {
+        this.valor = valor;
     }
 
     public double getValor() {

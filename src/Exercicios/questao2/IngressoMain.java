@@ -6,10 +6,9 @@ public class IngressoMain {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         System.out.println("Digite o valor do ingresso:");
-        Ingresso ingresso = new Ingresso();
-        ingresso.setValor(teclado.nextDouble());
-        System.out.println(ingresso);
-        IngressoVip ingressoVip = new IngressoVip();
+        Ingresso ingresso = new Ingresso(teclado.nextDouble());
+        System.out.print(ingresso);
+        IngressoVip ingressoVip = new IngressoVip(ingresso.getValor(), teclado.nextDouble());
         System.out.println("Digite o valor do ingressoVip:");
         ingressoVip.setValorAdiconal(teclado.nextDouble());
         System.out.println(ingressoVip);
